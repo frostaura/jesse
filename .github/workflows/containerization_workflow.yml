@@ -2,7 +2,7 @@ name: Containerization Workflow
 on:
   push:
     branches:
-    - main
+    - master
 
 jobs:
   docker:
@@ -37,5 +37,5 @@ jobs:
       with:
         destination_container_repo: frostaura/${{ vars.PROJECT_IDENTITY }}
         provider: dockerhub
-        short_description: 'An autonomous algorithmic crypto trading system.'
+        short_description: 'Jesse is an advanced crypto trading framework that aims to **simplify** **researching** and defining **YOUR OWN trading.'
         readme_file: 'README.md'
