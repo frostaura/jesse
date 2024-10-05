@@ -34,3 +34,4 @@ RUN pip3 install codecov pytest-cov
 ENTRYPOINT pytest --cov=./ # && codecov
 
 FROM jesse_with_test_${TEST_BUILD} AS jesse_final
+ENV APP_PORT 9000
