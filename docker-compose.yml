@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  jesse-bot:
+    image: frostaura/jesse:latest
+    container_name: jesse-bot
+    volumes:
+      - ./tmp/jesse-config/:/app/config/
+      - ./tmp/jesse-storage/:/app/storage/
+      - ./tmp/jesse-logs/:/app/logs/
+    environment:
+      - LOG_LEVEL=INFO
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
+    command: ["jesse", "run"]
+
+volumes:
+  jesse-config:
+  jesse-storage:
+  jesse-logs:

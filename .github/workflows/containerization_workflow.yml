@@ -37,5 +37,5 @@ jobs:
       with:
         destination_container_repo: frostaura/${{ vars.PROJECT_IDENTITY }}
         provider: dockerhub
-        short_description: 'Jesse is an advanced crypto trading framework that aims to **simplify** **researching** and defining **YOUR OWN trading.'
+        short_description: 'An advanced crypto trading framework.'
         readme_file: 'README.md'
